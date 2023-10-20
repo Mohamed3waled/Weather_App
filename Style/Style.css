@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Start Container Media Screen */
+.container {
+    padding: 0 15px;
+    margin: auto;
+}
+
+/* Small Screens */
+@media (min-width : 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Medium Secreens */
+@media (min-width : 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* Large Secreen */
+@media (min-width : 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* X-Large Secreen */
+@media (min-width : 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+/* XX-Large Secreen */
+@media (min-width : 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+/* End Container Media Screen */
+
+
+/* Start Home_Bage */
+
+.Home_Bage {
+    background-image: url(../images/mountains.svg), linear-gradient(135deg, #1f4e69 0, #164058 100%);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+
+.container .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .nav h1 {
+    text-align: center;
+    color: #eee;
+}
+
+.container .nav img {
+    width: 50px;
+    height: 50px;
+    order: 1;
+    margin-left: 15px;
+}
+
+.content {
+    padding: 100px 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+@media (max-width : 768px) {
+    .content {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+}
+
+@media(max-width : 991px) {
+    .content {
+        gap: 20px;
+    }
+    .info {
+        width: 100%;
+    }
+}
+
+.content .info {
+    flex-basis: calc(100% / 2);
+}
+
+.content .info h3 {
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #fff;
+}
+
+
+.Input {
+    width: 80%;
+}
+
+
+
+
+.Input input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Input button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #f47b21;
+    color: #fff;
+    outline: none;
+    border: 1px solid #eee;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width : 768px) {
+    .content .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Input {
+        margin-bottom: 20px;
+        width: 100% !important;
+    }
+}
+
+
+
+/* Display Data */
+.Data_Container {
+    flex: 1;
+    max-width: 100%;
+    background-color: #16394c;
+    border: 4px solid #608094;
+    border-radius: 6px;
+    padding: 15px 10px;
+    color: #ffff;
+}
+
+.Data_Container h5 {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Data_Info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width : 768px) {
+.Data_Info {
+    justify-content: space-between;
+}
+.Data_Container {
+    width: 100%;
+}
+}
+
+
+
+.Data_Info p {
+    font-size: 30px;
+}
+
+
+.Data_Info .Icon img {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.Data_Info .Icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Right_Data {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.Right_Data span {
+    display: flex;
+    align-items: center;
+}
+
+.Right_Data span i {
+    padding-right: 5px;
+}
+
+.Not_Found {
+    display: none;
+    text-align: center;
+}
+
+.Not_Found h5 {
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+}

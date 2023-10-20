@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Style/all.css">
+    <link rel="stylesheet" href="Style/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="GetData()">
+
+    <header class="Home_Bage">
+        <div class="container">
+            <div class="nav">
+                <img src="images/img_nav.png" alt="">
+                <h1>Weather App</h1>
+            </div>
+            <div class="content">
+                <div class="info">
+                    <h3>Real-Time & Historical
+                        <br>
+                        World Weather Data API
+                    </h3>
+                    <div class="Input" style="position: relative;">
+                        <input class="Input_Value" type="text" placeholder="Search With City Name">
+                        <button class="Search_Btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="Data_Container">
+                    <div class="Not_Found">
+                        <i class="fa-solid fa-sun-haze fa-2x"></i>
+                        <h5>City Not found</h5>
+                    </div>
+                    <div class="display_data">
+                        <h5 class="Country"></h5>
+                        <div class="Data_Info">
+                            <div class="Icon">
+                                <img class="Stats_Weather" alt>
+                                <span style="display: block;" class="Stats"></span>
+                            </div>
+                            <p class="Number"></p>
+                            
+                            <div class="Right_Data">
+                                <span class="Wind"></span>
+                                <span class="Precip"></span>
+                                <span class="Pressure"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
